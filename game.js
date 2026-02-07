@@ -176,23 +176,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "Эй, подруга, что с лицом?": {
       100: {
-        question: { image: "pics/question6_100.png" },
+        question: { image: "pics/question6_100.PNG" },
         answer: { text: "Просто смотрит на Ярика на его первом сольном концерте", image: "pics/answer6_100.png" }
       },
       200: {
-        question: { image: "pics/question6_200.png" },
+        question: { image: "pics/question6_200.PNG" },
         answer: { text: "Подкат Саши на песне «Океан и три реки»​​", image: "pics/answer6_200.png" }
       },
       300: {
-        question: { image: "pics/question6_300.png" },
+        question: { image: "pics/question6_300.PNG" },
         answer: { text: "Лапки Ярика на песне «Прыгну со скалы»​​", image: "pics/answer6_300.png" }
       },
       400: {
-        question: { image: "pics/question6_400.png" },
+        question: { image: "pics/question6_400.PNG" },
         answer: { text: "Сашина переделка арии Ленского «Olga will you weep for me»​​", image: "pics/answer6_400.png" }
       },
       500: {
-        question: { image: "pics/question6_500.png", text: "Кот в мешке!\nНазвание данной рубрики «Эй, подруга, что с лицом?» является строчкой известной песни из двухтысячных. \nЧто это за песня?​\nБонусный вопрос: на каком концерте её исполняли Саша и Ярик?​", audio: "music/question6_500.mp3" },
+        question: { image: "pics/question6_500.PNG", text: "Кот в мешке!\nНазвание данной рубрики «Эй, подруга, что с лицом?» является строчкой известной песни из двухтысячных. \nЧто это за песня?​\nБонусный вопрос: на каком концерте её исполняли Саша и Ярик?​", audio: "music/question6_500.mp3" },
         answer: { text: "Песня группы «Звери» – «Рома, извини». Первый Сашин сольный концерт.​​", video: "video/answer6_500.mp4" }
       }
     }
@@ -297,6 +297,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById(containerId);
     container.innerHTML = "";
 
+    const playBtn = document.getElementById(playBtnId);
+    const stopBtn = document.getElementById(stopBtnId);
+
+    // по умолчанию всегда прячем музыку
+    if (playBtn) playBtn.style.display = "none";
+    if (stopBtn) stopBtn.style.display = "none";
+
     if (data.hints) {
       currentHintIndex = 0;
       renderHint(container, data.hints);
@@ -315,9 +322,6 @@ document.addEventListener("DOMContentLoaded", () => {
       img.src = data.image;
       container.appendChild(img);
     }
-
-    const playBtn = document.getElementById(playBtnId);
-    const stopBtn = document.getElementById(stopBtnId);
 
     if (data.audio) {
       playBtn.style.display = stopBtn.style.display = "inline-block";
