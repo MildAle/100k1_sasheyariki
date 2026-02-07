@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="game-board" class="screen active">
+  <table>
+    <tbody id="board-body">
+      <!-- генерируется JS -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Вопрос -->
+<div id="question-screen" class="screen">
+  <h2 id="question-category"></h2>
+  <h3 id="question-value"></h3>
+  <p id="question-text"></p>
+  <button id="play-music-question">▶ Музыка</button>
+  <button id="stop-music-question">⏹ Стоп</button>
+  <button id="show-answer">Узнать ответ</button>
+</div>
+
+<!-- Ответ -->
+<div id="answer-screen" class="screen">
+  <h2>Ответ</h2>
+  <p id="answer-text"></p>
+  <button id="play-music-answer">▶ Музыка</button>
+  <button id="stop-music-answer">⏹ Стоп</button>
+  <button id="back-to-board">Назад к полю</button>
+</div>
+
+<!-- Общий аудио-плеер -->
+<audio id="audio-player"></audio>
+<script src="game.js"></script>
+</body>
+</html>
