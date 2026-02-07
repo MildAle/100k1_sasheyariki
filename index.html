@@ -10,6 +10,11 @@
 <body>
 
   <div id="game-board" class="screen active">
+    <h1 class="title">
+      100 к 1: Сашеярики эдишен
+      <span id="help-button" aria-label="Справка">❓</span>
+    </h1>
+
     <table>
       <tbody id="board-body">
         <!-- генерируется JS -->
@@ -28,8 +33,11 @@
         <div class="video-play-icon"></div>
       </div>
     </div>
-    <button id="play-music-question">▶ Музыка</button>
-    <button id="stop-music-question">⏹ Стоп</button>
+    <div class="audio-controls">
+      <button id="play-music-question">▶ Музыка</button>
+      <button id="stop-music-question">⏹ Стоп</button>
+    </div>
+
     <button id="show-answer">Узнать ответ</button>
   </div>
 
@@ -43,10 +51,28 @@
         <div class="video-play-icon"></div>
       </div>
     </div>
-    <button id="play-music-answer">▶ Музыка</button>
-    <button id="stop-music-answer">⏹ Стоп</button>
+    <div class="audio-controls">
+      <button id="play-music-answer">▶ Музыка</button>
+      <button id="stop-music-answer">⏹ Стоп</button>
+    </div>
+
     <button id="back-to-board">Назад к полю</button>
   </div>
+
+
+  <!-- POPUP -->
+<div id="help-popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="close-popup">✖</span>
+
+    <img id="help-image" src="pics/help1.png" alt="Правила">
+
+    <div class="popup-controls">
+      <button id="help-prev">←</button>
+      <button id="help-next">→</button>
+    </div>
+  </div>
+</div>
 
 
   <!-- Общий аудио-плеер -->

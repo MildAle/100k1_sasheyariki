@@ -59,23 +59,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "Угадай мелодию": {
       100: {
-        question: { audio: "music/question2_100.mp3" },
+        question: { text: "Запустите мелодию", audio: "music/question2_100.mp3" },
         answer: { audio: "music/answer2_100.mp3" }
       },
       200: {
-        question: { audio: "music/question2_200.mp3" },
+        question: { text: "Запустите мелодию", audio: "music/question2_200.mp3" },
         answer: { audio: "music/answer2_200.mp3" }
       },
       300: {
-        question: { audio: "music/question2_300.mp3" },
+        question: { text: "Запустите мелодию", audio: "music/question2_300.mp3" },
         answer: { audio: "music/answer2_300.mp3" }
       },
       400: {
-        question: { audio: "music/question2_400.mp3" },
+        question: { text: "Запустите мелодию", audio: "music/question2_400.mp3" },
         answer: { audio: "music/answer2_400.mp3" }
       },
       500: {
-        question: { audio: "music/question2_500.mp3" },
+        question: { text: "Запустите мелодию", audio: "music/question2_500.mp3" },
         answer: { video: "video/answer2_500.mp4" }
       }
     },
@@ -85,10 +85,115 @@ document.addEventListener("DOMContentLoaded", () => {
         question: {
           hints: ["pics/question3_100_0.png", "pics/question3_100_1.png", "pics/question3_100_2.png"]
         },
-
         answer: {
-          text: "Сашеярики"
+          text: "Томас Кинг и Джош Кросс из Детективной саги​",
+          image: "pics/answer3_100.png"
         }
+      },
+      200: {
+        question: {
+          hints: ["pics/question3_200_0.png", "pics/question3_200_1.png", "pics/question3_200_2.png"]
+        },
+        answer: {
+          text: "Саша и Ярик (наше всё)​​",
+          image: "pics/answer3_200.png"
+        }
+      },
+      300: {
+        question: {
+          hints: ["pics/question3_300_0.png", "pics/question3_300_1.png", "pics/question3_300_2.png"]
+        },
+        answer: {
+          text: "Бродяга и Брут из мюзикла «Икар»​​​",
+          image: "pics/answer3_300.png"
+        }
+      },
+      400: {
+        question: {
+          hints: ["pics/question3_400_0.png", "pics/question3_400_1.png", "pics/question3_400_2.png"]
+        },
+        answer: {
+          text: "L и Лайт из мюзикла «Тетрадь смерти»​​​​",
+          image: "pics/answer3_400.png"
+        }
+      },
+      500: {
+        question: {
+          hints: ["pics/question3_500_0.png", "pics/question3_500_1.png", "pics/question3_500_2.png"]
+        },
+        answer: {
+          text: "Бенедетто и Альбер из мюзикла «Монте Кристо»​​",
+          image: "pics/answer3_500.png"
+        }
+      }
+    },
+
+    "В прямом эфире": {
+      100: {
+        question: { text: "Саша: Нахрен! Я не пущу его! Не-е-ет! Нет, нет, пожалуйста! Блять! Простите за мат. Можно я сматерюсь? Ну это пиздец.​\nЯрик: *смеётся*\nПочему Саша так отчаянно не хотел пускать Ярика на стрим?​" },
+        answer: { text: "Ярик пришёл на стрим в образе тёмного эльфа (дроу)​", image: "pics/answer4_100.png" }
+      },
+      200: {
+        question: { text: "Во время исполнения «Куклы колдуна» на стриме зародилась кулинарная адаптация песни:​\nЯрик: А это всё _________!​\nСаша: Дай их мне!​\nЯрик: Возьми один! Другой лишь мне!​\nСаша: Укушу я этот ____ и не подавлюсь!​\n\nЧто за блюдо послужило вдохновением?​" },
+        answer: { text: "А это всё блины, блины с творожком!​", image: "pics/answer4_200.png" }
+      },
+      300: {
+        question: { text: "Саша: А на всякий случай где взять пьесу?​\nЯрик: О-о-о, давай по памяти! Давай!​\n\nКакую песню они исполнили после этого диалога?​" },
+        answer: { text: "Дуэт «Середина» из мюзикла «Икар» (в котором Саша безбожно и мемно переврал слова)​​", image: "pics/answer4_300.png" }
+      },
+      400: {
+        question: { text: "Ярик: Ты – мой гость, я тебе наложу (еды).​\nСаша: Блин, он с каждым словом закапывает нас всё глубже.​\nЯрик: Не, если ты хочешь равноправия в наших отношениях, то я тебя накормлю и отвезу до вокзала – на переднем сиденье, ты понял?\nДорога к ______ – это вот то, что ты сегодня сюда приехал. Ладно, все хорошие шутки ​на канале Гумбы, все шутки за 300 сегодня здесь.​\n\nК кому же вела Сашу дорога приключений? Это создание упоминалось в припеве одной популярной арии в его исполнении и требовало некоторой… Разборчивости.​" },
+        answer: { text: "Ярик заработал ачивку «Дорога к богине». Саша видимо тоже.​", image: "pics/answer4_400.png" }
+      },
+      500: {
+        question: { text: "Саша: А! Ещё из музыкальных групп я очень люблю La GazettE! Прям да, прям вообще. Я мечтаю взять вас и спеть что-то вроде «Filth in the beauty» на концерте! Можно Даню взять на гроул например, тебя – _______... Шутка, шутка, подожди, мне нужно найти ручку, Ярик, очень много зомби, не отвлекайся! *коварный хехек*\nЯрик: Где много зомби? Я вообще не вижу ни одного.\n\n​Куда же Саша вознамерился взять Ярика ​(и потом старательно перевёл его внимание на другие вещи)?​​" },
+        answer: { text: "На женский вокал. Но хорошо смеётся тот, кто смеётся последний.​​", image: "pics/answer4_500.png" }
+      }
+    },
+
+    "Чёрный квадрат": {
+      100: {
+        question: { image: "pics/question5_100.png" },
+        answer: { text: "Ярик в ушках", image: "pics/answer5_100.png" }
+      },
+      200: {
+        question: { image: "pics/question5_200.png" },
+        answer: { text: "В продуктовой корзинке Саши энное количество килограмм отменного Ярика​", image: "pics/answer5_200.png" }
+      },
+      300: {
+        question: { image: "pics/question5_300.png" },
+        answer: { text: "Неприличный жест в адрес «хозяина» Казьмина​", image: "pics/answer5_300.png" }
+      },
+      400: {
+        question: { image: "pics/question5_400.png" },
+        answer: { text: "Саша пытается подложить Ярику пачку сгущёнки​", image: "pics/answer5_400.png" }
+      },
+      500: {
+        question: { image: "pics/question5_500.png" },
+        answer: { text: "Ошейник с поводком (Бродяга не одобряет)​", image: "pics/answer5_500.png" }
+      }
+    },
+
+    "Эй, подруга, что с лицом?": {
+      100: {
+        question: { image: "pics/question6_100.png" },
+        answer: { text: "Просто смотрит на Ярика на его первом сольном концерте", image: "pics/answer6_100.png" }
+      },
+      200: {
+        question: { image: "pics/question6_200.png" },
+        answer: { text: "Подкат Саши на песне «Океан и три реки»​​", image: "pics/answer6_200.png" }
+      },
+      300: {
+        question: { image: "pics/question6_300.png" },
+        answer: { text: "Лапки Ярика на песне «Прыгну со скалы»​​", image: "pics/answer6_300.png" }
+      },
+      400: {
+        question: { image: "pics/question6_400.png" },
+        answer: { text: "Сашина переделка арии Ленского «Olga will you weep for me»​​", image: "pics/answer6_400.png" }
+      },
+      500: {
+        question: { image: "pics/question6_500.png", text: "Кот в мешке!\nНазвание данной рубрики «Эй, подруга, что с лицом?» является строчкой известной песни из двухтысячных. \nЧто это за песня?​\nБонусный вопрос: на каком концерте её исполняли Саша и Ярик?​", audio: "music/question6_500.mp3" },
+        answer: { text: "Песня группы «Звери» – «Рома, извини». Первый Сашин сольный концерт.​​", video: "video/answer6_500.mp4" }
       }
     }
   };
@@ -302,5 +407,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("stop-music-question").onclick = stopAudio;
   document.getElementById("stop-music-answer").onclick = stopAudio;
+
+  // ---------------- HELP POPUP ----------------
+
+  const helpBtn = document.getElementById("help-button");
+  const helpPopup = document.getElementById("help-popup");
+  const closePopup = document.getElementById("close-popup");
+
+  const helpImage = document.getElementById("help-image");
+  const helpPrev = document.getElementById("help-prev");
+  const helpNext = document.getElementById("help-next");
+
+  const helpImages = [
+    "pics/help1.png",
+    "pics/help2.png"
+  ];
+
+  let helpIndex = 0;
+
+  function updateHelpImage() {
+    helpImage.src = helpImages[helpIndex];
+  }
+
+  helpBtn.onclick = () => {
+    helpIndex = 0;
+    updateHelpImage();
+    helpPopup.classList.remove("hidden");
+  };
+
+  closePopup.onclick = () => {
+    helpPopup.classList.add("hidden");
+  };
+
+  helpPrev.onclick = () => {
+    if (helpIndex > 0) {
+      helpIndex--;
+      updateHelpImage();
+    }
+  };
+
+  helpNext.onclick = () => {
+    if (helpIndex < helpImages.length - 1) {
+      helpIndex++;
+      updateHelpImage();
+    }
+  };
+
+
 
 });
