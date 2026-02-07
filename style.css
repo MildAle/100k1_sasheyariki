@@ -103,3 +103,73 @@ button {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
+
+/* ---------------- ВИДЕО ---------------- */
+
+#question-video-wrapper,
+#answer-video-wrapper {
+  display: none;
+  width: 100%;
+  margin: 24px 0;
+  
+  /* Центрируем flex-контейнером */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  cursor: pointer;
+
+  /* flex для центрирования иконки */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 70vw; /* увеличиваем примерно в 2 раза по сравнению с 50vw */
+  max-width: 960px;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  background: black;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Иконка Play */
+.video-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 60px solid white; /* длина треугольника */
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  pointer-events: none; /* важно для клика */
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+/* скрываем при воспроизведении */
+.video-container.playing .video-play-icon {
+  opacity: 0;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .video-container video {
+    width: 90vw;
+  }
+
+  .video-play-icon {
+    border-left-width: 40px;
+    border-top-width: 23px;
+    border-bottom-width: 23px;
+  }
+}
+
+
