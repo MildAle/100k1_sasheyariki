@@ -153,24 +153,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "Чёрный квадрат": {
       100: {
-        question: { image: "pics/question5_100.png" },
+        question: { image: "pics/question5_100.PNG" },
         answer: { text: "Ярик в ушках", image: "pics/answer5_100.png" }
       },
       200: {
-        question: { image: "pics/question5_200.png" },
+        question: { image: "pics/question5_200.PNG" },
         answer: { text: "В продуктовой корзинке Саши энное количество килограмм отменного Ярика​", image: "pics/answer5_200.png" }
       },
       300: {
-        question: { image: "pics/question5_300.png" },
-        answer: { text: "Неприличный жест в адрес «хозяина» Казьмина​", image: "pics/answer5_300.png" }
+        question: { image: "pics/question5_300.PNG" },
+        answer: { text: "Неприличный жест в адрес «хозяина» Казьмина​", image: "pics/answer5_300.PNG" }
       },
       400: {
-        question: { image: "pics/question5_400.png" },
-        answer: { text: "Саша пытается подложить Ярику пачку сгущёнки​", image: "pics/answer5_400.png" }
+        question: { image: "pics/question5_400.PNG" },
+        answer: { text: "Саша пытается подложить Ярику пачку сгущёнки​", image: "pics/answer5_400.PNG" }
       },
       500: {
-        question: { image: "pics/question5_500.png" },
-        answer: { text: "Ошейник с поводком (Бродяга не одобряет)​", image: "pics/answer5_500.png" }
+        question: { image: "pics/question5_500.PNG" },
+        answer: { text: "Ошейник с поводком (Бродяга не одобряет)​", image: "pics/answer5_500.PNG" }
       }
     },
 
