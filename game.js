@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       200: {
         question: {
           text: "Расставьте исполнения мюзикла «Тетрадь смерти» в хронологическом порядке",
-          image: "pics/question1_200.PNG"
+          image: "pics/question1_200.png"
         },
         answer: {
-          image: "pics/answer1_200.PNG"
+          image: "pics/answer1_200.png"
         }
       },
       300: {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
           text: "Недавно среди персонажей Ярика появился тот...\nЧто это за персонажи?"
         },
         answer: {
-          image: "pics/answer1_300.PNG"
+          image: "pics/answer1_300.png"
         }
       },
       400: {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
           text: "Их роднит ремесло, которым они зарабатывают на жизнь.\nЧто это?"
         },
         answer: {
-          image: "pics/answer1_500.PNG"
+          image: "pics/answer1_500.png"
         }
       }
     },
