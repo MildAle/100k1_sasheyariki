@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Нет слов, одни эмодзи": {
       100: {
         question: {
-          hints: ["pics/question3_100_0.png", "pics/question3_100_1.png", "pics/question3_100_2.png"]
+          hints: ["pics/question3_100_0.PNG", "pics/question3_100_1.png", "pics/question3_100_2.png"]
         },
         answer: {
           text: "Томас Кинг и Джош Кросс из Детективной саги​",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       200: {
         question: {
-          hints: ["pics/question3_200_0.png", "pics/question3_200_1.png", "pics/question3_200_2.png"]
+          hints: ["pics/question3_200_0.PNG", "pics/question3_200_1.png", "pics/question3_200_2.png"]
         },
         answer: {
           text: "Саша и Ярик (наше всё)​​",
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       300: {
         question: {
-          hints: ["pics/question3_300_0.png", "pics/question3_300_1.png", "pics/question3_300_2.png"]
+          hints: ["pics/question3_300_0.PNG", "pics/question3_300_1.png", "pics/question3_300_2.png"]
         },
         answer: {
           text: "Бродяга и Брут из мюзикла «Икар»​​​",
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       400: {
         question: {
-          hints: ["pics/question3_400_0.png", "pics/question3_400_1.png", "pics/question3_400_2.png"]
+          hints: ["pics/question3_400_0.PNG", "pics/question3_400_1.png", "pics/question3_400_2.png"]
         },
         answer: {
           text: "L и Лайт из мюзикла «Тетрадь смерти»​​​​",
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       500: {
         question: {
-          hints: ["pics/question3_500_0.png", "pics/question3_500_1.png", "pics/question3_500_2.png"]
+          hints: ["pics/question3_500_0.PNG", "pics/question3_500_1.png", "pics/question3_500_2.png"]
         },
         answer: {
           text: "Бенедетто и Альбер из мюзикла «Монте Кристо»​​",
